@@ -6,9 +6,8 @@
 
 Openize.AForge can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, Windows Embedded (CE 6.0 R2), as well as Linux x64. The supported platforms include Net Core 3.1, Net6.0, Net7.0, Net8.0.
 
-## New Features & Enhancements in Version 25.2
- - Change FileFormat to Openize
- - Update Aspose.Drawing Engine
+## New Features & Enhancements in Version 25.12
+ - Update Aspose.Drawing Engine to v25.11
 
 
 ## Getting Started with Openize.AForge for .NET
@@ -42,7 +41,7 @@ System.Drawing.AsposeDrawing.License license = new System.Drawing.AsposeDrawing.
 license.SetLicense("Aspose.Drawing.License.lic");
 
 //Create grayscale filter
-var grayscaleFilter = new Openize.AForge.Imaging.Filters.Grayscale(0.2126, 0.7152, 0.0722);
+var grayscaleFilter = new Openize.AForge.Imaging.NetStandard.Filters.Color_Filters.Grayscale(0.2126, 0.7152, 0.0722);
 
 //open image
 using (var bmp = (Bitmap)Image.FromFile(@"sample.bmp"))

@@ -6,15 +6,13 @@
 	<GenerateDocumentationFile>True</GenerateDocumentationFile>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	    <Version>$(VersionNumber)</Version>
+    <Version>$(VersionNumber)</Version>
     <PackAsTool>False</PackAsTool>
-    <SignAssembly Condition="Exists('..\Aspose.Certificates\Aspose.snk')">True</SignAssembly>
-    <AssemblyOriginatorKeyFile Condition="Exists('..\Aspose.Certificates\Aspose.snk')">..\Aspose.Certificates\Aspose.snk</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspose.Drawing" Version="[$(DrwVersion),)" />
+    <PackageReference Include="Aspose.Drawing" Version="*" />
   </ItemGroup>
 
   <ItemGroup>

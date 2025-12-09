@@ -7,8 +7,6 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	    <Version>$(VersionNumber)</Version>
     <PackAsTool>False</PackAsTool>
-    <SignAssembly Condition="Exists('..\Aspose.Certificates\Aspose.snk')">True</SignAssembly>
-    <AssemblyOriginatorKeyFile Condition="Exists('..\Aspose.Certificates\Aspose.snk')">..\Aspose.Certificates\Aspose.snk</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
   </PropertyGroup>
 
